@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    background: rgb(0, 0, 0);
+}
+
+/* common style start here */
+
+.display-flex {
+    display: flex;
+}
+
+.btn-primary {
+    color: rgb(255, 255, 255);
+    width: 224px;
+    height: 54px;
+    border-radius: 42px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: black;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    margin-bottom: 76px;
+    margin-right: 24px;
+
+}
+
+.mango {
+    background: rgb(230, 83, 60);
+    border: none;
+}
+
+/* common style ends here */
+
+
+
+/* header section start here */
+header {
+    border: 1px solid blue;
+    width: 100%;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+    color: rgb(255, 255, 255);
+}
+
+.nav-bar {
+    margin: 57px 150px 0 150px;
+    gap: 468px;
+    align-items: center;
+}
+
+.fitness {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+    font-style: italic;
+    align-items: center;
+    padding: 0 auto;
+
+}
+
+.nav {
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    width: 465px;
+    height: 46px;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+/* 
+.nav > ul{
+    margin: 0px;
+} */
+
+#nav-home {
+    border-radius: 46px;
+    padding: 8px 20px;
+    background: rgb(230, 83, 60);
+    margin: 4px;
+}
+
+.heading-body {
+    margin-left: 190px;
+}
+
+.heading-title {
+    color: rgb(255, 255, 255);
+    font-size: 4.875rem;
+    font-weight: 900;
+    margin-top: 97px;
+    margin-bottom: 28px;
+}
+
+.heading-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-bottom: 28px;
+}
+
+.header-img {
+    position: absolute;
+    margin-left: 877px;
+    margin-top: 25px;
+    width: 100%;
+    width: 349px;
+    height: 580px;
+}
+
+
+.card-1 {
+    width: 206px;
+    height: 96px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 453px;
+    margin-left: 60px;
+}
+
+.card-2 {
+    width: 193px;
+    height: 98px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    margin-left: 160px;
+    margin-top: 160px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 28px 12px 28px 23px;
+    background: rgb(230, 83, 60);
+    border-radius: 100%;
+}
+
+.card-title-2 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 17px;
+}
+
+.card-container>h3,
+p {
+    margin: 0px;
+}
+
+.card-container-2>h3,
+p {
+    margin: 0px;
+}
+
+.card-container {
+    width: 108px;
+    height: 56px;
+    /* justify-content: center;
+    align-items: center; */
+    margin-top: 20px;
+    margin-right: 23px;
+}
+
+.card-container-2 {
+    margin-top: 17px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 900;
+    color: rgb(250, 250, 249);
+    margin-bottom: 8px;
+}
+
+.card-name {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(239, 237, 232, 0.65);
+}
