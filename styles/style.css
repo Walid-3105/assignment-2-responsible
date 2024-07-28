@@ -1,9 +1,26 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mea+Culpa&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: "Inter", sans-serif;
     background: rgb(0, 0, 0);
 }
+
+.shape-font{
+    font-family: "Mea Culpa", cursive;
+    font-weight: 400;
+    font-size: 4.9rem;
+}
+
 
 /* common style start here */
 
@@ -22,7 +39,6 @@ body {
     box-sizing: border-box;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 42px;
-    margin-bottom: 76px;
     margin-right: 24px;
 
 }
@@ -37,15 +53,20 @@ body {
 
 
 /* header section start here */
-header {
-    border: 1px solid blue;
-    width: 100%;
-    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+header{
+    background: linear-gradient(180.00deg, rgb(48, 48, 48), rgba(119, 119, 119, 0) 100%);
     color: rgb(255, 255, 255);
+    max-width: 100%;
+    border: 1px solid blue;
+    margin: 0 auto;
 }
 
+
 .nav-bar {
-    margin: 57px 150px 0 150px;
+    margin: 0 190px;
+    padding-top: 57px;
+    width: 1060px;
+    height: 46px;
     gap: 468px;
     align-items: center;
 }
@@ -55,7 +76,6 @@ header {
     font-weight: 800;
     color: rgb(230, 83, 60);
     font-style: italic;
-    align-items: center;
     padding: 0 auto;
 
 }
@@ -66,15 +86,10 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 39px;
     width: 465px;
-    height: 46px;
     justify-content: space-between;
     padding-right: 20px;
 }
 
-/* 
-.nav > ul{
-    margin: 0px;
-} */
 
 #nav-home {
     border-radius: 46px;
@@ -85,13 +100,20 @@ header {
 
 .heading-body {
     margin-left: 190px;
+    margin-top: 86px;
+    width: 520px;
+    height: 440px;
+    margin-bottom: 50px;
 }
 
 .heading-title {
     color: rgb(255, 255, 255);
     font-size: 4.875rem;
+    height: 282px;
+    width: 520px;
+    line-height: 120%;
+    letter-spacing: 0%;
     font-weight: 900;
-    margin-top: 97px;
     margin-bottom: 28px;
 }
 
@@ -105,15 +127,16 @@ header {
 
 .header-img {
     position: absolute;
-    margin-left: 877px;
-    margin-top: 25px;
+    margin-left: 168px;
+    margin-right: 214px;
+    margin-top: 60px;
     width: 100%;
     width: 349px;
-    height: 580px;
+    height: 520px;
 }
 
 
-.card-1 {
+ .card-1 {
     width: 206px;
     height: 96px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -133,9 +156,10 @@ header {
     border-radius: 12px;
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
-    margin-left: 160px;
+    margin-left: 130px;
     margin-top: 160px;
-}
+} 
+
 
 .icon {
     width: 40px;
@@ -149,11 +173,6 @@ header {
     font-size: 40px;
     font-weight: 900;
     margin-top: 17px;
-}
-
-.card-container>h3,
-p {
-    margin: 0px;
 }
 
 .card-container-2>h3,
@@ -187,4 +206,122 @@ p {
     font-size: 16px;
     font-weight: 400;
     color: rgba(239, 237, 232, 0.65);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+/* header section ends here */
+
+/* Responsible for mobile device */
+@media screen and (max-width: 576px) {
+    .heading-section{
+        flex-direction: column;
+    }
+
+    .header-img{
+        width: 352px;
+        position: none;
+        margin: 20px;
+    }
+
+    .heading-body{
+        width: 352px;
+        height: 335px;
+        margin: 55px 21px 8px 20px;
+    }
+
+    .heading-title{
+        font-size: 36px;
+        line-height: 120%;
+        width: 285px;
+        height: 129px;
+    }
+    .button{
+        display: flex;
+    }
+    .btn-primary{
+        width: 169px;
+        height: 54px;
+    }
+
+    .first-nav{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav ul {
+        text-align: center;
+        padding: 15px;
+        border-top: 1px solid #444;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .nav-bar{
+        margin: 0 20px;
+        width: 353px;
+        height: 43px;
+    }
+    .fitness {
+        display: block;
+        width: 132px;
+        height: 43px;
+        font-size: 2rem;
+    }
+    .heading-section{
+        width: 100%;
+
+    }
+    .card-container{
+        margin-bottom: 20px;
+    }
+    .icon{
+        margin: 20px;
+    }
+    .card-1{
+        margin-top: 250px;
+        margin-left: 20px;
+        width: 155.74px;
+        height: 72.58px;
+    }
+     .card-2{
+        margin-top: 40px;
+        margin-right: 20px;
+        margin-left: 29px;
+        width: 145.91px;
+        height: 74.09px;
+    }
+
+    .card-title{
+        font-size: 18.14px;
+    }
+    .card-title-2{
+        font-size: 30px;
+    }
+    .card-name{
+        font-size: 9.83px;
+    }
 }
