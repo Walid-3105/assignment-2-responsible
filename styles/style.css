@@ -223,12 +223,19 @@ p {
 }
 /* header section ends here */
 
+
+
+
+
 /* Responsible for mobile device */
 @media screen and (max-width: 576px) {
     .heading-section{
         flex-direction: column;
     }
-
+    .header{
+        width: 393px;
+        height: 1024px;
+    }
     .header-img{
         width: 352px;
         position: none;
