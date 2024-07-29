@@ -1,10 +1,9 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mea+Culpa&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,12 +14,15 @@ body {
     background: rgb(0, 0, 0);
 }
 
-.shape-font{
+.shape-font {
     font-family: "Mea Culpa", cursive;
     font-weight: 400;
     font-size: 4.9rem;
 }
 
+.hide {
+    display: none;
+}
 
 /* common style start here */
 
@@ -35,7 +37,7 @@ body {
     border-radius: 42px;
     font-size: 1.1rem;
     font-weight: 600;
-    background: black;
+    background: rgb(21, 21, 21);
     box-sizing: border-box;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 42px;
@@ -53,17 +55,18 @@ body {
 
 
 /* header section start here */
-header{
-    background: linear-gradient(180.00deg, rgb(48, 48, 48), rgba(119, 119, 119, 0) 100%);
+.header {
+    background: linear-gradient(rgb(9, 9, 9), rgb(43, 42, 42), rgb(9, 9, 9) 100%);
+    /* background: radial-gradient( rgb(48, 48, 48), rgba(119, 119, 119, 0) 100%); */
     color: rgb(255, 255, 255);
-    max-width: 100%;
+    /* max-width: 100%; */
+    width: 1347px;
     border: 1px solid blue;
     margin: 0 auto;
 }
 
-
 .nav-bar {
-    margin: 0 190px;
+    margin: 0 170px;
     padding-top: 57px;
     width: 1060px;
     height: 46px;
@@ -99,7 +102,7 @@ header{
 }
 
 .heading-body {
-    margin-left: 190px;
+    margin-left: 170px;
     margin-top: 86px;
     width: 520px;
     height: 440px;
@@ -136,7 +139,7 @@ header{
 }
 
 
- .card-1 {
+.card-1 {
     width: 206px;
     height: 96px;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -158,7 +161,7 @@ header{
     background: rgba(48, 48, 48, 0.54);
     margin-left: 130px;
     margin-top: 160px;
-} 
+}
 
 
 .icon {
@@ -170,7 +173,7 @@ header{
 }
 
 .card-title-2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 900;
     margin-top: 17px;
 }
@@ -183,8 +186,6 @@ p {
 .card-container {
     width: 108px;
     height: 56px;
-    /* justify-content: center;
-    align-items: center; */
     margin-top: 20px;
     margin-right: 23px;
 }
@@ -196,14 +197,14 @@ p {
 }
 
 .card-title {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 900;
     color: rgb(250, 250, 249);
     margin-bottom: 8px;
 }
 
 .card-name {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: rgba(239, 237, 232, 0.65);
 }
@@ -221,7 +222,107 @@ p {
     margin: 4px 0;
     transition: 0.4s;
 }
+
 /* header section ends here */
+
+/* main section start here */
+
+/* Change Your Habits section start here */
+.change-your-habits {
+    border: 1px dashed red;
+    color: rgb(255, 255, 255);
+    width: 1044px;
+    height: 452px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.habit-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0 auto;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.habit-description,
+.img-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 0 auto;
+    margin-bottom: 54px;
+    text-align: center;
+}
+
+.img-description {
+    margin-bottom: 0px;
+}
+
+.habit-image {
+    border-radius: 100%;
+    margin: 0 40px;
+    margin-bottom: 30px;
+
+}
+
+.img-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+/* Change Your Habits section end here */
+
+
+/* Run section start here */
+.run-section {
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    width: 1060px;
+    height: 371px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    display: none;
+}
+
+.run-section-body {
+    margin: 41px 165px 40px 54px;
+}
+
+.run-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.run-description {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 0.5;
+    width: 443px;
+    margin-bottom: 34px;
+}
+
+.run-image {
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
+    margin: 30px 32px 29px 0px;
+}
+
+/* Run section end here */
+
+
+
+
+
+
+
 
 
 
@@ -229,43 +330,50 @@ p {
 
 /* Responsible for mobile device */
 @media screen and (max-width: 576px) {
-    .heading-section{
+
+    /* header responsible start */
+    .heading-section {
         flex-direction: column;
     }
-    .header{
+
+    .header {
         width: 393px;
         height: 1024px;
     }
-    .header-img{
+
+    .header-img {
         width: 352px;
         position: none;
-        margin: 20px;
+        margin: 48px 18px 0px 22px;
     }
 
-    .heading-body{
+    .heading-body {
         width: 352px;
         height: 335px;
         margin: 55px 21px 8px 20px;
     }
 
-    .heading-title{
+    .heading-title {
         font-size: 36px;
         line-height: 120%;
         width: 285px;
         height: 129px;
     }
-    .button{
+
+    .button {
         display: flex;
     }
-    .btn-primary{
+
+    .btn-primary {
         width: 169px;
         height: 54px;
     }
 
-    .first-nav{
+    .first-nav {
         width: 100%;
         justify-content: space-between;
     }
+
     .nav {
         display: none;
         flex-direction: column;
@@ -287,34 +395,40 @@ p {
         display: flex;
     }
 
-    .nav-bar{
+    .nav-bar {
         margin: 0 20px;
         width: 353px;
         height: 43px;
     }
+
     .fitness {
         display: block;
         width: 132px;
         height: 43px;
         font-size: 2rem;
     }
-    .heading-section{
+
+    .heading-section {
         width: 100%;
 
     }
-    .card-container{
+
+    .card-container {
         margin-bottom: 20px;
     }
-    .icon{
+
+    .icon {
         margin: 20px;
     }
-    .card-1{
+
+    .card-1 {
         margin-top: 250px;
         margin-left: 20px;
         width: 155.74px;
         height: 72.58px;
     }
-     .card-2{
+
+    .card-2 {
         margin-top: 40px;
         margin-right: 20px;
         margin-left: 29px;
@@ -322,13 +436,80 @@ p {
         height: 74.09px;
     }
 
-    .card-title{
-        font-size: 18.14px;
+    .card-title {
+        font-size: 1.14rem;
     }
-    .card-title-2{
-        font-size: 30px;
+
+    .card-title-2 {
+        font-size: 1.875rem;
     }
-    .card-name{
+
+    .card-name {
         font-size: 9.83px;
     }
+
+    /* header responsible end */
+
+    /* Change Your Habits responsible section start */
+    .change-your-habits {
+        width: 338px;
+        height: 1398px;
+        margin-top: 0px;
+        margin-bottom: 66px;
+    }
+
+    .habit-footer {
+        display: grid;
+        grid-template-columns: 1;
+    }
+
+    .habit-title,
+    .run-title {
+        font-size: 2rem;
+    }
+
+    .habit-description {
+        line-height: 24px;
+        letter-spacing: 0.3px;
+    }
+
+    .habit-image {
+        margin: 0 76px;
+        margin-bottom: 30px;
+    }
+
+    .img-description {
+        width: 231px;
+        margin-bottom: 36px;
+    }
+
+    /* Change Your Habits responsible section end */
+
+    /* Run responsible section start */
+    .run-section {
+        width: 353px;
+        height: 531px;
+        flex-direction: column;
+    }
+    .run-section-body{
+        margin: 31px 33px;
+    }
+    .run-title, .run-description {
+        width: 287px;
+        /* height: 76px; */
+    }
+
+    .run-button{
+        width: 287px;
+        height: 54px;
+    }
+
+    .run-image{
+        width: 287px;
+        height: 170px;
+        margin: 0 33px;
+    }
+
+
+    /* Run responsible section end */
 }
