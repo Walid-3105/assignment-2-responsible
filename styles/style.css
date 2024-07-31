@@ -286,25 +286,26 @@ p {
     height: 371px;
     border-radius: 18px;
     background: rgb(34, 34, 34);
+    margin-bottom: 100px;
 }
 
 .run-section-body {
     margin: 41px 165px 40px 54px;
 }
 
-.run-title {
+.run-title,
+.calculator-header-title {
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: 14px;
 }
 
-.run-description {
+.run-description,
+.calculator-header-description {
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 24px;
-    opacity: 0.5;
-    width: 443px;
-    margin-bottom: 34px;
+    opacity: 0.4;
 }
 
 .run-image {
@@ -314,9 +315,71 @@ p {
     margin: 30px 32px 29px 0px;
 }
 
+.run-button {
+    margin-top: 34px;
+}
+
 /* Run section end here */
 
+/* BMI Calculator section start here */
+.bmi-calculator {
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
 
+.calculator-header {
+    margin-bottom: 65px;
+    margin-left: 27%;
+}
+
+.calculator-body {
+    background: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+}
+
+
+.table-chart-title {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.calculator{
+    margin: 52px 0px 133px 188px;
+
+}
+
+
+.table {
+    width: 310px;
+    height: 216px;
+    margin-top: 52px;
+}
+
+table,
+th,
+td {
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+}
+
+.table-header {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+tr>td {
+    opacity: 0.5;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+
+
+/* BMI Calculator section end here */
 
 
 
@@ -490,20 +553,23 @@ p {
         height: 531px;
         flex-direction: column;
     }
-    .run-section-body{
+
+    .run-section-body {
         margin: 31px 33px;
     }
-    .run-title, .run-description {
+
+    .run-title,
+    .run-description {
         width: 287px;
         /* height: 76px; */
     }
 
-    .run-button{
+    .run-button {
         width: 287px;
         height: 54px;
     }
 
-    .run-image{
+    .run-image {
         width: 287px;
         height: 170px;
         margin: 0 33px;
