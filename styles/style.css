@@ -20,9 +20,6 @@ body {
     font-size: 4.9rem;
 }
 
-.hide {
-    display: none;
-}
 
 /* common style start here */
 
@@ -59,9 +56,7 @@ body {
     background: linear-gradient(rgb(9, 9, 9), rgb(43, 42, 42), rgb(9, 9, 9) 100%);
     /* background: radial-gradient( rgb(48, 48, 48), rgba(119, 119, 119, 0) 100%); */
     color: rgb(255, 255, 255);
-    /* max-width: 100%; */
     width: 1347px;
-    border: 1px solid blue;
     margin: 0 auto;
 }
 
@@ -229,7 +224,6 @@ p {
 
 /* Change Your Habits section start here */
 .change-your-habits {
-    border: 1px dashed red;
     color: rgb(255, 255, 255);
     width: 1044px;
     height: 452px;
@@ -262,9 +256,11 @@ p {
 }
 
 .habit-image {
+    background: rgb(34, 34, 34);
+    padding: 4px;
     border-radius: 100%;
-    margin: 0 40px;
-    margin-bottom: 30px;
+    margin: 0 36px;
+    margin-bottom: 26px;
 
 }
 
@@ -294,14 +290,16 @@ p {
 }
 
 .run-title,
-.calculator-header-title {
+.calculator-header-title,
+.team-title {
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: 14px;
 }
 
 .run-description,
-.calculator-header-description {
+.calculator-header-description,
+.team-description {
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 24px;
@@ -313,6 +311,9 @@ p {
     height: 312px;
     border-radius: 18px;
     margin: 30px 32px 29px 0px;
+    object-fit: none;
+    object-position: 67% 30%;
+    
 }
 
 .run-button {
@@ -322,9 +323,14 @@ p {
 /* Run section end here */
 
 /* BMI Calculator section start here */
-.bmi-calculator {
+.bmi-calculator,
+.meet-our-team {
     color: rgb(255, 255, 255);
     width: 100%;
+}
+
+.bmi-calculator {
+    margin-bottom: 88px;
 }
 
 .calculator-header {
@@ -343,7 +349,7 @@ p {
     font-weight: 900;
 }
 
-.calculator{
+.calculator {
     margin: 52px 0px 133px 188px;
 
 }
@@ -376,16 +382,136 @@ tr>td {
 }
 
 
+.bmi {
+    margin: 49px 160px 52px 175px;
+    /* margin-top: 49px; */
+    width: 577px;
+    height: 386px;
+}
 
+.bmi-title {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
 
+.bmi-description {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 34px;
+    opacity: 0.5;
+}
+
+.text {
+    width: 282.5px;
+    height: 48px;
+}
+
+#activity-option {
+    width: 577px;
+    height: 48px;
+}
+
+.text,
+#activity-option {
+    border-radius: 8px;
+    padding: 12px 40px 12px 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.hight,
+.age {
+    margin-right: 12px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 282.5px);
+    gap: 12px;
+}
+
+.submit-btn {
+    width: 224px;
+    height: 54px;
+    margin-top: 34px;
+}
 
 /* BMI Calculator section end here */
+/* Meet Our team section start here */
+
+.team-header {
+    align-items: center;
+    text-align: center;
+}
+
+.team-footer {
+    width: 1060px;
+    height: 604px;
+    margin: 58px 170px 88px 170px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.team-image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    gap: 20px;
+}
+
+/* .team-image>img {
+    width: 326.67px;
+    height: 272px;
+    border-radius: 18px;
+    } */
+
+.trainer>img {
+    width: 100%;
+    height: 272px;
+    display: block;
+    border-radius: 18px;
+    opacity: 0.8;
+}
+
+.trainer {
+    position: relative;
+}
+
+
+.text-trainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.text-trainer>h4 {
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.text-trainer>p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+/* Meet Our team section end here */
 
 
 
 
-
-
+.hide {
+    display: none;
+}
 
 
 
@@ -394,7 +520,8 @@ tr>td {
 @media screen and (max-width: 576px) {
 
     /* header responsible start */
-    .heading-section {
+    .heading-section,
+    .calculator-body {
         flex-direction: column;
     }
 
@@ -516,21 +643,25 @@ tr>td {
     .change-your-habits {
         width: 338px;
         height: 1398px;
-        margin-top: 0px;
+        margin-top: 15px;
         margin-bottom: 66px;
     }
 
-    .habit-footer {
+    .habit-footer,
+    .team-image {
         display: grid;
-        grid-template-columns: 1;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .habit-title,
-    .run-title {
+    .run-title,
+    .calculator-header-title,
+    .team-title {
         font-size: 2rem;
     }
 
-    .habit-description {
+    .habit-description,
+    .team-description {
         line-height: 24px;
         letter-spacing: 0.3px;
     }
@@ -551,6 +682,7 @@ tr>td {
     .run-section {
         width: 353px;
         height: 531px;
+        margin-bottom: 45px;
         flex-direction: column;
     }
 
@@ -570,11 +702,75 @@ tr>td {
     }
 
     .run-image {
+        object-fit: fill;
         width: 287px;
         height: 170px;
         margin: 0 33px;
     }
 
-
     /* Run responsible section end */
+
+
+    /* BMI calculator section start here */
+    .calculator-header {
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    .calculator {
+        margin: 30px 0px 30px 20px;
+    }
+
+    .bmi-calculator{
+        margin-bottom: 66px;
+    }
+
+    .bmi {
+        margin: 0px 0px 30px 20px;
+        width: 354px;
+        height: 395px;
+    }
+
+    .table-chart-title,
+    .bmi-title {
+        font-size: 1rem;
+    }
+
+    .bmi-description {
+        width: 346px;
+        height: 72px;
+        line-height: 24px;
+    }
+
+    .text {
+        width: 170.5px;
+        height: 48px;
+    }
+
+    .form {
+        grid-template-columns: repeat(2, 170px);
+    }
+
+    #activity-option {
+        width: 353px;
+        height: 48px;
+    }
+
+    /* BMI calculator section ends here */
+    /* Our team section start here */
+    .team-description {
+        width: 309px;
+        height: 72px;
+        margin: 0 auto;
+    }
+
+    .team-footer {
+        width: 353px;
+        height: 1188px;
+        margin: 37px 20px 66px 20px;
+    }
+    .none{
+        display: none;
+    }
+    /* Our team section ends here */
 }
