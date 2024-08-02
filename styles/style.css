@@ -334,7 +334,7 @@ p {
 
 .calculator-header {
     margin-bottom: 65px;
-    margin-left: 27%;
+    margin-left: 364px;
 }
 
 .calculator-body,
@@ -350,10 +350,9 @@ footer {
 }
 
 .calculator {
-    margin: 52px 0px 133px 188px;
+    margin: 52px 0px 133px auto;
 
 }
-
 
 .table {
     width: 310px;
@@ -383,8 +382,8 @@ tr>td {
 
 
 .bmi {
-    margin: 49px 160px 52px 175px;
-    /* margin-top: 49px; */
+    margin: 49px auto 52px 175px;
+    /* padding: 49px 160px 52px 175px; */
     width: 577px;
     height: 386px;
 }
@@ -451,7 +450,7 @@ tr>td {
 .team-footer {
     width: 1060px;
     height: 604px;
-    margin: 58px 170px 88px 170px;
+    margin: 58px auto 88px auto;
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.1);
 }
@@ -825,7 +824,7 @@ hr {
     .team-footer {
         width: 353px;
         height: 1188px;
-        margin: 37px 20px 66px 20px;
+        margin: 37px auto 66px auto;
     }
 
     .none {
@@ -846,8 +845,10 @@ hr {
         letter-spacing: 0.3px;
         margin-bottom: 30px;
     }
+
     hr {
         margin: 10px 20px 30px 20px;
     }
+
     /* Footer Contact section end here */
 }
