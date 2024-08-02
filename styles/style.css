@@ -54,9 +54,8 @@ body {
 /* header section start here */
 .header {
     background: linear-gradient(rgb(9, 9, 9), rgb(43, 42, 42), rgb(9, 9, 9) 100%);
-    /* background: radial-gradient( rgb(48, 48, 48), rgba(119, 119, 119, 0) 100%); */
     color: rgb(255, 255, 255);
-    width: 1347px;
+    width: 100%;
     margin: 0 auto;
 }
 
