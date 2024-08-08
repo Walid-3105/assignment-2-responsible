@@ -221,6 +221,35 @@ p {
 
 /* main section start here */
 
+/* fitness module section start here */
+.fitness-module{
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+    width: 1060px;
+    margin-top: 100px;
+    border-radius: 20px;
+    background: rgb(34, 34, 34); 
+}
+
+.fitness-module-title{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 0 40px;
+    padding-top: 20px;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.fitness-module-video{
+    margin-left: 90px;
+    margin-right: 90px;
+    margin: 0px 90px 40px 90px; 
+    width: 880px;
+    border-radius: 20px;
+}
+
+/* fitness module section end here */
+
 /* Change Your Habits section start here */
 .change-your-habits {
     color: rgb(255, 255, 255);
@@ -241,7 +270,8 @@ p {
 }
 
 .habit-description,
-.img-description {
+.img-description,
+.fitness-module-description {
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.875rem;
     font-weight: 400;
@@ -440,6 +470,7 @@ tr>td {
 }
 
 /* BMI Calculator section end here */
+
 /* Meet Our team section start here */
 
 .team-header {
@@ -566,7 +597,7 @@ hr {
 
 /* Footer Contact section end here */
 
-.hide {
+.h {
     display: none;
 }
 
@@ -583,7 +614,7 @@ hr {
     }
 
     .header {
-        width: 393px;
+        width: 390px;
         height: 1024px;
     }
 
@@ -693,9 +724,33 @@ hr {
     .card-name {
         font-size: 9.83px;
     }
-
     /* header responsible end */
 
+    /* fitness module section start here*/
+    .fitness-module{
+        margin-top: 20px;
+        width: 375px;
+    }
+    .fitness-module-title{
+        font-size: 1.7rem;
+        text-align: left;
+        margin: 0px;
+        padding: 20px;
+        padding-bottom: 0px;
+    }
+    .fitness-module-description{
+        text-align: left;
+        padding: 20px;
+        margin-bottom: 10px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+    }
+    .fitness-module-video{
+        width: 335px;
+        margin: 0px 20px 20px 20px;
+    }
+
+    /* fitness module section end here*/
     /* Change Your Habits responsible section start */
     .change-your-habits {
         width: 338px;
