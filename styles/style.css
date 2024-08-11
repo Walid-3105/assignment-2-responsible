@@ -416,11 +416,10 @@ tr>td {
     width: 577px;
     height: 386px;
 }
-.bmi select{
-}
+
 .bmi select option {
     background: rgb(30, 30, 30); 
-    padding-right: 10px;
+
 }
 
 .bmi-title {
