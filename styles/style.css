@@ -455,7 +455,9 @@ tr>td {
     color: rgba(255, 255, 255, 0.5);
     background: rgba(255, 255, 255, 0.1);
 }
-
+::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
 .hight,
 .age {
     margin-right: 12px;
